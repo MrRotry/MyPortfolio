@@ -1,14 +1,6 @@
 .main {
     display: flex;
 
-    &_info_block {
-
-    }
-
-    &_work_block {
-
-    }
-
     &_info_header {
         font-family: $font2;
         font-size: 2.5rem;
@@ -130,5 +122,92 @@
         font-weight: 400;
         line-height: 2.75rem;
         max-width: 780px;
+    }
+
+    &_portfolio {
+        justify-content: center;
+
+        &_content {
+            margin-bottom: 2rem;
+        }
+
+        &_block {
+            display: flex;
+            flex-direction: row;
+            /* gap: 2.25rem; */
+            width: 1300px;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        &_img {
+            width: 512px;
+            height: 512px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        &_title {
+            font-family: $font2;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2.75rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        &_text {
+            font-family: $font2;
+            width: 512px;
+            padding-bottom: 1rem;
+            font-size: 1.75rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.75rem;
+            max-width: 780px;
+
+            &_2 {
+                font-family: $font2;
+                width: 512px;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &_cv_title {
+        font-family: $font2;
+        font-size: 4.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &_cv_title_2 {
+        font-family: $font2;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &_cv_list {
+        list-style-type: none;
+
+        &_element {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            font-family: $font2;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
     }
 }
