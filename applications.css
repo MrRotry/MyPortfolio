@@ -225,7 +225,7 @@ a {
     position: absolute;
     display: flex;
     align-items: center;
-    height: 27.125rem;
+    height: 31.125rem;
     background: rgba(27, 27, 27, 0.685);
     -webkit-backdrop-filter: blur(1px);
             backdrop-filter: blur(1px);
@@ -630,11 +630,12 @@ a {
 .main_portfolio_text_2 {
   font-family: "Poppins", sans-serif;
   max-width: 512px;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 768px) {
   .main_portfolio_text_2 {
     max-width: 307px;
+    font-size: 1rem;
   }
 }
 @media (max-width: 425px) {

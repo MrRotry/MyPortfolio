@@ -276,9 +276,10 @@
             &_2 {
                 font-family: $font2;
                 max-width: 512px;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 @media (max-width: 768px) {
                     max-width: 307px;
+                    font-size: 1rem;
                 }
                 @media (max-width: 425px) {
                     max-width: 282px;
