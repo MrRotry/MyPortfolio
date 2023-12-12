@@ -24,7 +24,7 @@
                 <a class="navbar_link" href="./portfolio.html">Portfolio</a>
                 <a class="navbar_link" href="./aboute_me.html">Aboute Me</a>
                 <a class="navbar_link" href="./CV.html">CV</a>
-                <a class="navbar_link" href="">Contact Me</a>
+                <a class="navbar_link" href=""  id="myLink">Contact Me</a>
             </div>
         </div>
     </nav>
@@ -72,6 +72,13 @@
             </div>
         </div>
     </footer>
+    <div id="myModal" class="modal">
+        <!-- Зміст модального вікна -->
+        <div class="modal_content">
+          <div class="close">×</div>
+          <p>Деякий текст у модальному вікні..</p>
+        </div>
+      </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
 
@@ -106,6 +113,27 @@
             }
         });
         });     
+    </script>
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var link = document.getElementById("myLink");
+        var div = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        link.onclick = function(event) {
+            event.preventDefault();
+        modal.style.display = "block";
+        }
+        div.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
     </script>
 </body>
 </html>
