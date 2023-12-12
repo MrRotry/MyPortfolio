@@ -1,6 +1,22 @@
 .main {
     display: flex;
 
+    &_info_container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1504px;
+        width: 100%;
+        gap: 2.5rem;
+        @media (max-width: 1024px) {
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
     &_info_header {
         font-family: $font2;
         font-size: 2.5rem;
@@ -9,6 +25,10 @@
         line-height: 2.75rem;
         margin-bottom: 1.5rem;
         text-transform: uppercase;
+        @media (max-width: 768px) {
+            font-size: 1.75rem;
+            line-height: 2.25rem;
+        }
     }
 
     &_contats_list {
@@ -17,6 +37,9 @@
         gap: 0.5rem;
         list-style-type: none;
         width: 100%;
+        @media (max-width: 768px) {
+            display: none;
+        }
 
         a {
             color: #FFF6E0;
@@ -51,15 +74,22 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        padding-left: 6.5rem;
         width: 100%;
+        @media (max-width: 768px) {
+            max-width: 25rem;
+        }
     }
 
     &_work_content {
         display: flex;
+        gap: 1.5rem;
         border-top: 1px solid #fff;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &_work_titel {
@@ -68,6 +98,11 @@
         font-style: normal;
         font-weight: 700;
         line-height: 2.75rem;
+        padding-top: 1.5rem;
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
     }
 
     &_work_text {
@@ -99,6 +134,8 @@
             flex-wrap: wrap;
         }
     }
+
+    &
 
     &_about_me_phto {
         background-image: url('./img/about_me.jpg');
