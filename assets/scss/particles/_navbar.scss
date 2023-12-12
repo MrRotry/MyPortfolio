@@ -23,6 +23,12 @@
       font-family: $font;
       color: #fff;
       font-size: 2rem;
+      @media (max-width: 1024px) {
+        font-size: 1.75rem;
+      }
+      @media (max-width: 425px) {
+        font-size: 1.25rem;
+      }
     }
   
     &_burger {
@@ -35,7 +41,7 @@
   .burger {
     display: none;
   
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       display: flex;
       align-items: center;
     }
@@ -64,15 +70,15 @@
   }
   
   #myCheckbox:not(:checked) ~ .burger_span {
-    @media (max-width: 768px) {
-      // Additional styles if needed
+    @media (max-width: 1024px) {
+
     }
   }
   
   .navbar_burger_label_block {
     display: none;
   
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       display: flex;
     }
   }
@@ -91,7 +97,7 @@
   }
   
   .navbar_link {
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       font-size: 2rem;
       font-style: normal;
       font-weight: 400;
@@ -100,7 +106,7 @@
     }
   
     &:hover {
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
         font-size: 2rem;
         font-style: normal;
         font-weight: 700;
@@ -137,13 +143,13 @@
   }
   
   .navbar_link_first {
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       padding-top: 2.25rem;
     }
   }
   
   .navbar_link {
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.5s, transform 0.5s;
@@ -156,13 +162,13 @@
   }
   
   #myCheckbox:not(:checked) ~ .navbar_menu {
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       animation: fadeOutUp 0.3s ease-in-out forwards;
     }
   }
   
   #myCheckbox:checked ~ .navbar_menu {
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       animation: fadeIn 1s ease-in-out;
     }
   }
@@ -171,7 +177,7 @@
     display: flex;
     align-items: center;
     gap: 1.88rem;
-    @media (max-width:768px) {
+    @media (max-width:1024px) {
         position: absolute;
         display: flex;
         align-items: center;
