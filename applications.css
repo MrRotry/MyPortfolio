@@ -285,6 +285,13 @@ a {
   border-radius: 0.5rem;
   padding: 1rem 0;
   font-size: 1.25rem;
+  transition: transform 0.2s;
+}
+.header_button:hover {
+  transform: scale(1.1);
+}
+.header_button:active {
+  transform: scale(1.15);
 }
 .header_text_block {
   max-width: 63.75rem;
