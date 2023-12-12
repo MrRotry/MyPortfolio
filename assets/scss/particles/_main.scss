@@ -177,13 +177,35 @@
         }
     }
 
+    &_cv_container {
+        padding-top: 5rem;
+        max-width: 1504px;
+        width: 100%;
+    }
+
+    &_cv_block {
+        display: flex;
+        padding: 1rem 0rem;
+        max-width: 1504px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        @media (max-width: 814px) {
+            justify-content: center;
+        }
+    }
+
     &_cv_title {
         font-family: $font2;
         font-size: 4rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 2.75rem;
+        line-height: 5.75rem;
         margin-bottom: 1.5rem;
+        @media (max-width: 814px) {
+            text-align: center;
+        }
     }
 
     &_cv_title_2 {
