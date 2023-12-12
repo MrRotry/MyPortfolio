@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./applications.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <title>Kurutsa Portfolio</title>
 </head>
 <body>
@@ -91,9 +91,9 @@
             <div class="close opacity"></div>
         </div>
           <form>
-            <input type="text" placeholder="NAME" />
-            <input type="text" placeholder="REASONE" />
-            <input type="text" placeholder="POSSIBLE MEETING TIME" />
+            <input type="text" placeholder="NAME">
+            <input type="text" placeholder="REASONE">
+            <input type="text" placeholder="POSSIBLE MEETING TIME">
             <button class="opacity">SUBMIT</button>
           </form>
         </div>
@@ -102,63 +102,6 @@
       <div class="theme_btn_container"></div>
     </div>
   </div>
-   <script>
-        document.addEventListener('DOMContentLoaded', function() {
-
-        var checkbox = document.getElementById('myCheckbox');
-        var burgerSpans = document.querySelectorAll('.burger_span');
-        
-        checkbox.addEventListener('change', function() {
-            if (checkbox.checked) {
-                burgerSpans[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
-                burgerSpans[1].style.opacity = '0';
-                burgerSpans[2].style.transform = 'rotate(45deg) translate(-5px, -6px)';
-            } else {
-                burgerSpans[0].style.transform = 'none';
-                burgerSpans[1].style.opacity = '1';
-                burgerSpans[2].style.transform = 'none';
-            }
-        });
-        
-        var navbarLinks = document.querySelectorAll('.navbar_link');
-        
-        checkbox.addEventListener('change', function() {
-            if (checkbox.checked) {
-                navbarLinks.forEach(function(link, index) {
-                    setTimeout(function() {
-                        link.classList.add('show');
-                    }, index * 300);
-                });
-            } else {
-                navbarLinks.forEach(function(link) {
-                    link.classList.remove('show');
-                });
-            }
-        });
-        }); 
-    </script> 
-    <script>
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var link = document.getElementById("myLink");
-        var div = document.getElementsByClassName("close")[0];
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        link.onclick = function(event) {
-            event.preventDefault();
-        modal.style.display = "block";
-        }
-        div.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-            modal.style.display = "none";
-        }
-        }
-    </script>
+  <script src="main.js"></script>
 </body>
 </html>
